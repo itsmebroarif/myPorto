@@ -1,0 +1,11 @@
+{
+  "name": "webapps",
+  "version": "1.0.0",
+  "description": "Ini adalah website portfolio saya",
+  "main": "index.html",
+  "scripts": {
+    "tools": "npm install bootstrap axios jquery popper.js"
+  },
+  "author": "Arif XII RPL 3",
+  "license": "ISC"
+}
