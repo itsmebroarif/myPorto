@@ -15,7 +15,7 @@
 
      body {
        font-family: 'Roboto', sans-serif;
-    background-color: #ebf9ff;
+       background-color: rgb(227, 250, 234);
      }
 
      .navbar {
@@ -32,6 +32,10 @@
 
      #about {
        margin-top: 4rem;
+     }
+
+     .portfolio{
+        margin-top: 5.3rem;
      }
 
      #gallery {
@@ -107,6 +111,7 @@
            <a class="nav-link active" aria-current="page" href="#">Home</a>
            <a class="nav-link active" href="#about">About</a>
            <a class="nav-link active" href="#portfolio">Portfolio</a>
+           <a class="nav-link active" href="#appsgallery">Apps</a>
            <a class="nav-link active" href="#contact">Contact</a>
          </div>
        </div>
@@ -117,15 +122,15 @@
    <section class="jumbotron text-center">
      <img src="assets/aboutme.jpg" alt="Arif" width="250" class="rounded-circle" />
      <h1 class="animate__lightSpeedInRight display-4">Arif Alexander</h1>
-     <p class="animate__lightSpeedInLeft lead">Mentor | Fullstack Dev | It Enthusiast</p>
+     <p class="animate__lightSpeedInLeft lead">Mentor | Fullstack Dev | It Specialist</p>
    </section>
 
    <!-- About Page -->
-   <section id="about" class="mt-6">
+   <section id="about" class="py-6">
      <div class="container">
-       <div class="row text-center py-5">
+       <div class="row text-center">
          <div class="col">
-           <h2>Hello Spirit People Of Reader, My Name Is Arif</h2>
+           <h2>About me as a developer</h2>
            <center>
              <hr width="300px">
            </center>
@@ -137,7 +142,7 @@
            </div>
            <div class="col-md-6 mt-6">
 
-             <p contenteditable style="text-align: left;">
+             <p style="text-align: left;">
                I was born in Jakarta, on 18 December 2003 but now I live in Depok, West Java. One of my hobbies that
                will I do in my future is Programming And Designing a Website with the other people like following an
                organization in my school. my other hobby is reading a book. I like to read like a Historical of
@@ -152,13 +157,13 @@
    </section>
 
    <!-- Gallery Page -->
-   <section id="portfolio" style="margin-top: 3rem;">
+   <section id="portfolio" class="portfolio">
      <div class="container">
        <div class="row">
          <div class="col">
            <div class="titleGallery mb-4 mt-2">
              <center>
-               <h2>Portfolio</h2>
+               <h2>Web & Library</h2>
                <hr width="300px">
              </center>
            </div>
@@ -215,29 +220,48 @@
              </div>
            </div>
          </div>
+   </section>
+
+   <section id="appsgallery" style="margin-top: 3rem;">
+     <div class="container">
+       <div class="row">
+         <div class="col">
+           <div class="titleGallery mb-4 mt-2">
+             <center>
+               <h2>Application's </h2>
+               <hr width="300px">
+             </center>
+           </div>
+         </div>
          <div class="row">
-           <div class="col-md-4 mb-3">
+           <div class="col-md-4 ">
              <div class="card">
                <img src="assets/content/7.png" class="card-img-top" alt="Mac-1">
                <div class="card-body">
-                 <p class="card-text">To Do List</p>
-               </div>
+                <h5 class="card-title">Make It</h5>
+                <p class="card-text">Set your workflow using todo list apps </p>
+                <a href="https://todo-apps-blush.vercel.app/" class="btn btn-primary">Go To Apps</a>
+              </div>
              </div>
            </div>
            <div class="col-md-4 mb-3">
              <div class="card">
                <img src="assets/content/8.png" class="card-img-top" alt="Mac-2">
                <div class="card-body">
-                 <p class="card-text">Money Management.</p>
-               </div>
+                <h5 class="card-title">Cashy</h5>
+                <p class="card-text">Calculate your money using cashy.</p>
+                <a href="https://cashy-pwa.vercel.app/" class="btn btn-primary">Go To Apps</a>
+              </div>
              </div>
            </div>
            <div class="col-md-4 mb-3">
              <div class="card">
                <img src="assets/content/9.png" class="card-img-top" alt="Mac-3">
                <div class="card-body">
-                 <p class="card-text">Contact Apps</p>
-               </div>
+                <h5 class="card-title">Connect Chat</h5>
+                <p class="card-text">Contact book for save your friend's contact.</p>
+                <a href="https://contact-form-ten-liard.vercel.app/" class="btn btn-primary">Go To Apps</a>
+              </div>
              </div>
            </div>
          </div>
@@ -262,15 +286,15 @@
            <form name="feedback-form">
              <div class="mb-3">
                <label for="name" class="form-label">Nama Lengkap</label>
-               <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" />
+               <input required type="text" class="form-control" id="name" aria-describedby="name" name="nama" />
              </div>
              <div class="mb-3">
                <label for="email" class="form-label">Email</label>
-               <input type="email" class="form-control" id="email" aria-describedby="email" name="email" />
+               <input required type="email" class="form-control" id="email" aria-describedby="email" name="email" />
              </div>
              <div class="mb-3">
                <label for="pesan" class="form-label">Pesan</label>
-               <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
+               <textarea required class="form-control" id="pesan" rows="3" name="pesan"></textarea>
              </div>
              <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
              <button class="btn btn-primary btn-loading d-none" type="button" disabled>
