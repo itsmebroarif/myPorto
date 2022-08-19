@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,70 +20,131 @@
     }
 
     .navbar {
-   background: linear-gradient(270deg, #3c4f7d, #88367a, #1f545a);
-   background-size: 600% 600%;
+      background: linear-gradient(270deg, #3c4f7d, #88367a, #1f545a);
+      background-size: 600% 600%;
 
-   -webkit-animation: AnimationName 6s ease infinite;
-   -moz-animation: AnimationName 6s ease infinite;
-   animation: AnimationName 6s ease infinite;
-}
+      -webkit-animation: AnimationName 6s ease infinite;
+      -moz-animation: AnimationName 6s ease infinite;
+      animation: AnimationName 6s ease infinite;
+    }
 
-@-webkit-keyframes AnimationName {
-   0%{background-position:0% 50%}
-   50%{background-position:100% 50%}
-   100%{background-position:0% 50%}
-}
-@-moz-keyframes AnimationName {
-   0%{background-position:0% 50%}
-   50%{background-position:100% 50%}
-   100%{background-position:0% 50%}
-}
-@keyframes AnimationName {
-   0%{background-position:0% 50%}
-   50%{background-position:100% 50%}
-   100%{background-position:0% 50%}
-}
+    @-webkit-keyframes AnimationName {
+      0% {
+        background-position: 0% 50%
+      }
+
+      50% {
+        background-position: 100% 50%
+      }
+
+      100% {
+        background-position: 0% 50%
+      }
+    }
+
+    @-moz-keyframes AnimationName {
+      0% {
+        background-position: 0% 50%
+      }
+
+      50% {
+        background-position: 100% 50%
+      }
+
+      100% {
+        background-position: 0% 50%
+      }
+    }
+
+    @keyframes AnimationName {
+      0% {
+        background-position: 0% 50%
+      }
+
+      50% {
+        background-position: 100% 50%
+      }
+
+      100% {
+        background-position: 0% 50%
+      }
+    }
 
 
     .jumbotron {
-   background: linear-gradient(306deg, #3979d2, #4fbb9f);
-   background-size: 400% 400%;
-   padding-top: 8rem;
-   padding-bottom: 4rem;
-   color: azure;
-   -webkit-animation: Animasi 4s ease infinite;
-   -moz-animation: Animasi 4s ease infinite;
-   -o-animation: Animasi 4s ease infinite;
-   animation: Animasi 4s ease infinite;
-}
+      background: linear-gradient(306deg, #3979d2, #4fbb9f);
+      background-size: 400% 400%;
+      padding-top: 8rem;
+      padding-bottom: 4rem;
+      color: azure;
+      -webkit-animation: Animasi 4s ease infinite;
+      -moz-animation: Animasi 4s ease infinite;
+      -o-animation: Animasi 4s ease infinite;
+      animation: Animasi 4s ease infinite;
+    }
 
-@-webkit-keyframes Animasi {
-   0%{background-position:0% 50%}
-   50%{background-position:100% 50%}
-   100%{background-position:0% 50%}
-}
-@-moz-keyframes Animasi {
-   0%{background-position:0% 50%}
-   50%{background-position:100% 50%}
-   100%{background-position:0% 50%}
-}
-@-o-keyframes Animasi {
-   0%{background-position:0% 50%}
-   50%{background-position:100% 50%}
-   100%{background-position:0% 50%}
-}
-@keyframes Animasi {
-   0%{background-position:0% 50%}
-   50%{background-position:100% 50%}
-   100%{background-position:0% 50%}
-}
+    @-webkit-keyframes Animasi {
+      0% {
+        background-position: 0% 50%
+      }
+
+      50% {
+        background-position: 100% 50%
+      }
+
+      100% {
+        background-position: 0% 50%
+      }
+    }
+
+    @-moz-keyframes Animasi {
+      0% {
+        background-position: 0% 50%
+      }
+
+      50% {
+        background-position: 100% 50%
+      }
+
+      100% {
+        background-position: 0% 50%
+      }
+    }
+
+    @-o-keyframes Animasi {
+      0% {
+        background-position: 0% 50%
+      }
+
+      50% {
+        background-position: 100% 50%
+      }
+
+      100% {
+        background-position: 0% 50%
+      }
+    }
+
+    @keyframes Animasi {
+      0% {
+        background-position: 0% 50%
+      }
+
+      50% {
+        background-position: 100% 50%
+      }
+
+      100% {
+        background-position: 0% 50%
+      }
+    }
 
     #about {
       margin-top: 8rem;
     }
 
-    .portfolio{
-       margin-top: 6.3rem;
+    .portfolio {
+      margin-top: 6.3rem;
     }
 
     #gallery {
@@ -168,8 +230,9 @@
   <!-- Jumbotron -->
   <section class="jumbotron text-center ">
     <img src="assets/new_pose.jpg" alt="Arif" width="250" class="rounded-circle" />
-    <h1 class="animate__lightSpeedInRight display-4" style="text-shadow: 2px 2px #3d596b;">Arif Alexander</h1>
-    <p class="animate__lightSpeedInLeft lead" style="text-shadow: 2px 2px #3d596b;">Mentor | Fullstack Dev | It Specialist</p>
+    <h1 data-aos="fade-down" class="animate__bounce display-4" style="text-shadow: 2px 2px #3d596b;">Arif Alexander</h1>
+    <p data-aos="fade-up" class="animate__bounce lead" style="text-shadow: 2px 2px #3d596b;">Mentor | Fullstack Dev | It
+      Specialist</p>
   </section>
   <!-- About Page -->
   <section id="about" class="py-6">
@@ -284,33 +347,33 @@
             <div class="card">
               <img src="assets/content/7.png" class="card-img-top" alt="Mac-1">
               <div class="card-body">
-               <h5 class="card-title">Make It</h5>
-               <p class="card-text">Set your workflow using todo list apps </p>
-               <a href="https://todo-apps-blush.vercel.app/" class="btn btn-primary">Go To Apps</a> <br>
-               <a href="https://github.com/itsmebroarif/todo-apps" class="btn btn-primary mt-2">Download Apps</a>
-             </div>
+                <h5 class="card-title">Make It</h5>
+                <p class="card-text">Set your workflow using todo list apps </p>
+                <a href="https://todo-apps-blush.vercel.app/" class="btn btn-primary">Go To Apps</a> <br>
+                <a href="https://github.com/itsmebroarif/todo-apps" class="btn btn-primary mt-2">Download Apps</a>
+              </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
             <div class="card">
               <img src="assets/content/8.png" class="card-img-top" alt="Mac-2">
               <div class="card-body">
-               <h5 class="card-title">Cashy</h5>
-               <p class="card-text">Calculate your money using cashy.</p>
-               <a href="https://cashy-pwa.vercel.app/" class="btn btn-primary">Go To Apps</a> <br>
-               <a href="https://github.com/itsmebroarif/todo-apps" class="btn btn-primary mt-2">Download Apps</a>
-             </div>
+                <h5 class="card-title">Cashy</h5>
+                <p class="card-text">Calculate your money using cashy.</p>
+                <a href="https://cashy-pwa.vercel.app/" class="btn btn-primary">Go To Apps</a> <br>
+                <a href="https://github.com/itsmebroarif/todo-apps" class="btn btn-primary mt-2">Download Apps</a>
+              </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
             <div class="card">
               <img src="assets/content/9.png" class="card-img-top" alt="Mac-3">
               <div class="card-body">
-               <h5 class="card-title">Connect Chat</h5>
-               <p class="card-text">Contact book for save your friend's contact.</p>
-               <a href="https://contact-form-ten-liard.vercel.app/" class="btn btn-primary">Go To Apps</a> <br>
-               <a href="https://github.com/itsmebroarif/contact-form" class="btn btn-primary mt-2">Download Apps</a>
-             </div>
+                <h5 class="card-title">Connect Chat</h5>
+                <p class="card-text">Contact book for save your friend's contact.</p>
+                <a href="https://contact-form-ten-liard.vercel.app/" class="btn btn-primary">Go To Apps</a> <br>
+                <a href="https://github.com/itsmebroarif/contact-form" class="btn btn-primary mt-2">Download Apps</a>
+              </div>
             </div>
           </div>
         </div>
@@ -362,7 +425,9 @@
       <div class="row">
         <div class="col-md-12 text-center">
           <div class="copyright">
-            <h5>© <span>2022</span> <a href="https://l.instagram.com/?u=https%3A%2F%2Flink-socialmedia.vercel.app%2F&e=ATMwR_aw3m0AlFFLoUrDZ8rmb_SOCj1pKcp9m0oZXSlr-D7dALDmLVXDeEm9hG6NEE34J-wVa5F1h62YAectKWyvldtCkTSm&s=1" class="transition">Code With Arif</a> All rights reserved.</h5>
+            <h5>© <span>2022</span> <a
+                href="https://l.instagram.com/?u=https%3A%2F%2Flink-socialmedia.vercel.app%2F&e=ATMwR_aw3m0AlFFLoUrDZ8rmb_SOCj1pKcp9m0oZXSlr-D7dALDmLVXDeEm9hG6NEE34J-wVa5F1h62YAectKWyvldtCkTSm&s=1"
+                class="transition">Code With Arif</a> All rights reserved.</h5>
           </div>
         </div>
       </div>
@@ -371,9 +436,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js">
   </script>
-  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
-
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <script>
     const scriptURL =
@@ -389,9 +452,9 @@
       btnLoading.classList.toggle('d-none');
       btnKirim.classList.toggle('d-none');
       fetch(scriptURL, {
-          method: 'POST',
-          body: new FormData(form)
-        })
+        method: 'POST',
+        body: new FormData(form)
+      })
         .then((response) => {
           // tampilkan tombol kirim, hilangkan tombol loading
           btnLoading.classList.toggle('d-none');
@@ -407,9 +470,13 @@
     });
   </script>
 
+<script>
+  AOS.init();
+</script>
+
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
     integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
-  </script>
+    </script>
 </body>
 
 </html>
