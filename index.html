@@ -14,16 +14,12 @@
 
     body {
       font-family: 'Roboto', sans-serif;
-      background-color: rgb(212, 243, 252);
+      /* background-color: rgb(212, 243, 252); */
     }
 
     .navbar {
-      background: linear-gradient(270deg, #3c4f7d, #88367a, #1f545a);
+      background: #0e1c42;
       background-size: 600% 600%;
-
-      -webkit-animation: AnimationName 6s ease infinite;
-      -moz-animation: AnimationName 6s ease infinite;
-      animation: AnimationName 6s ease infinite;
     }
 
     @-webkit-keyframes AnimationName {
@@ -70,14 +66,14 @@
 
 
     .jumbotron {
-      background: linear-gradient(306deg, #07234b, #044232);
+      /* background: linear-gradient(306deg, #2e0522, #03142c); */
       background-size: 400% 400%;
       padding-top: 8rem;
       padding-bottom: 4rem;
       -webkit-animation: Animasi 4s ease infinite;
       -moz-animation: Animasi 4s ease infinite;
       -o-animation: Animasi 4s ease infinite;
-      animation: Animasi 4s ease infinite;
+      animation: Animasi 5s ease infinite;
     }
 
     @-webkit-keyframes Animasi {
@@ -228,9 +224,10 @@
   <!-- Jumbotron -->
   <section class="jumbotron text-center ">
     <img src="assets/new_pose.jpg" alt="Arif" width="250" class="rounded-circle" />
-    <h1 data-aos="fade-down" class="animate__bounce display-4" style="text-shadow: 2px 2px #3d596b;">Arif Alexander</h1>
-    <p data-aos="fade-up" class="animate__bounce lead" style="text-shadow: 2px 2px #3d596b;">Mentor | Fullstack Dev | It
-      Specialist</p>
+    <div class="mt-3 py-2">
+      <h1 data-aos="fade-down" class="animate__bounce display-4">Arif Alexander</h1>
+      <h5 data-aos="fade-up" class="animate__bounce lead">Mentor | It Specialist | Fullstack Dev</h5>
+    </div>
   </section>
   <!-- About Page -->
   <section id="about" class="py-6">
@@ -238,9 +235,6 @@
       <div class="row text-center">
         <div class="col">
           <h2>About me as a developer</h2>
-          <center>
-            <hr width="300px">
-          </center>
         </div>
         <div class="row justify-content-center" style="margin-top: 3rem;">
           <div class="col-md-3 mt-6">
@@ -249,14 +243,17 @@
           </div>
           <div class="col-md-6 mt-6">
 
-            <p style="text-align: left;">
+
+            <h6 style="text-align: left;">
               I was born in Jakarta, on 18 December 2003 but now I live in Depok, West Java. One of my hobbies that
               will I do in my future is Programming And Designing a Website with the other people like following an
               organization in my school. my other hobby is reading a book. I like to read like a Historical of
               computers and math. I like to read a novel too, Every weekend I always open websites that sell an e-book.
               After that, my latest hobby is playing video games, it is so very interesting for me because the first
               time I use my old computer is for playing games and then I have interested to start learning to program.
-            </p>
+            </h6>
+
+
           </div>
         </div>
       </div>
@@ -280,7 +277,7 @@
             <div class="card" data-aos="flip-left">
               <img src="assets/content/1.png" class="card-img-top" alt="Kultech">
               <div class="card-body">
-                <p class="card-text">Kultech.id</p>
+                <h6 class="card-text">Kultech.id</h6>
               </div>
             </div>
           </div>
@@ -288,7 +285,7 @@
             <div class="card" data-aos="flip-right">
               <img src="assets/content/2.jpg" class="card-img-top" alt="Connect">
               <div class="card-body">
-                <p class="card-text">Connect Chatapp</p>
+                <h6 class="card-text">Connect Chatapp</h6>
               </div>
             </div>
           </div>
@@ -296,7 +293,7 @@
             <div class="card" data-aos="flip-left">
               <img src="assets/content/3.png" class="card-img-top" alt="CWA">
               <div class="card-body">
-                <p class="card-text">CWA Startup</p>
+                <h6 class="card-text">CWA Startup</h6>
               </div>
             </div>
           </div>
@@ -306,7 +303,7 @@
             <div class="card" data-aos="flip-right">
               <img src="assets/content/4.png" class="card-img-top" alt="Seraboetan">
               <div class="card-body">
-                <p class="card-text">Seraboetan Page</p>
+                <h6 class="card-text">Seraboetan Page</h6>
               </div>
             </div>
           </div>
@@ -314,7 +311,7 @@
             <div class="card" data-aos="flip-left">
               <img src="assets/content/5.png" class="card-img-top" alt="Sukamaju Gallery">
               <div class="card-body">
-                <p class="card-text">Sukamaju Gallery</p>
+                <h6 class="card-text">Sukamaju Gallery</h6>
               </div>
             </div>
           </div>
@@ -322,7 +319,7 @@
             <div class="card" data-aos="flip-right">
               <img src="assets/content/6.png" class="card-img-top" alt="Toko Baju">
               <div class="card-body">
-                <p class="card-text">Rest Shirt</p>
+                <h6 class="card-text">Rest Shirt</h6>
               </div>
             </div>
           </div>
@@ -346,7 +343,7 @@
               <img src="assets/content/7.png" class="card-img-top" alt="Mac-1">
               <div class="card-body">
                 <h5 class="card-title">Make It</h5>
-                <p class="card-text">Set your workflow using todo list apps </p>
+                <h6 class="card-text">Set your workflow using todo list apps </h6> <br>
                 <a href="https://todo-apps-blush.vercel.app/" class="btn btn-primary">Go To Apps</a> <br>
                 <a href="https://github.com/itsmebroarif/todo-apps" class="btn btn-primary mt-2">Download Apps</a>
               </div>
@@ -357,7 +354,7 @@
               <img src="assets/content/8.png" class="card-img-top" alt="Mac-2">
               <div class="card-body">
                 <h5 class="card-title">Cashy</h5>
-                <p class="card-text">Calculate your money using cashy.</p>
+                <h6 class="card-text">Calculate your money using cashy.</h6>
                 <a href="https://cashy-pwa.vercel.app/" class="btn btn-primary">Go To Apps</a> <br>
                 <a href="https://github.com/itsmebroarif/todo-apps" class="btn btn-primary mt-2">Download Apps</a>
               </div>
@@ -368,7 +365,7 @@
               <img src="assets/content/9.png" class="card-img-top" alt="Mac-3">
               <div class="card-body">
                 <h5 class="card-title">Connect Chat</h5>
-                <p class="card-text">Contact book for save your friend's contact.</p>
+                <h6 class="card-text">Open source apps for contact manager .</h6>
                 <a href="https://contact-form-ten-liard.vercel.app/" class="btn btn-primary">Go To Apps</a> <br>
                 <a href="https://github.com/itsmebroarif/contact-form" class="btn btn-primary mt-2">Download Apps</a>
               </div>
@@ -397,17 +394,20 @@
           <form name="feedback-form">
             <div class="mb-3">
               <label for="name" class="form-label">Nama Lengkap</label>
-              <input placeholder="Masukan Nama Mu Disini" required type="text" class="form-control" id="name" aria-describedby="name" name="nama" />
+              <input autocomplete="off" placeholder="Masukan Nama Mu Disini" required type="text" class="form-control" id="name"
+                aria-describedby="name" name="nama" />
             </div>
             <div class="mb-3">
               <label for="email" class="form-label">Email</label>
-              <input placeholder="Masukan Email Mu" required type="email" class="form-control" id="email" aria-describedby="email" name="email" />
+              <input autocomplete="off" placeholder="Masukan Email Mu" required type="email" class="form-control" id="email"
+                aria-describedby="email" name="email" />
             </div>
             <div class="mb-3">
               <label for="pesan" class="form-label">Pesan</label>
-              <textarea placeholder="Isi Pesan Mu Disini" required class="form-control" id="pesan" rows="3" name="pesan"></textarea>
+              <textarea placeholder="Isi Pesan Mu Disini" required class="form-control" id="pesan" rows="3"
+                name="pesan"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
+            <button type="submit" class="btn btn-primary btn-kirim">Kirim Pesan</button>
             <button class="btn btn-primary btn-loading d-none" type="button" disabled>
               <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
               Mengirim...
@@ -424,9 +424,8 @@
       <div class="row">
         <div class="col-md-12 text-center">
           <div class="copyright">
-            <h5>© <span>2022</span> <a
-                href="https://link-socialmedia.vercel.app/"
-                class="transition">Code With Arif</a> All rights reserved.</h5>
+            <h5>© <span>2022</span> <a href="https://link-socialmedia.vercel.app/" class="transition">Code With Arif</a>
+              All rights reserved.</h5>
           </div>
         </div>
       </div>
@@ -451,9 +450,9 @@
       btnLoading.classList.toggle('d-none');
       btnKirim.classList.toggle('d-none');
       fetch(scriptURL, {
-        method: 'POST',
-        body: new FormData(form)
-      })
+          method: 'POST',
+          body: new FormData(form)
+        })
         .then((response) => {
           // tampilkan tombol kirim, hilangkan tombol loading
           btnLoading.classList.toggle('d-none');
@@ -475,7 +474,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
     integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
-    </script>
+  </script>
 </body>
 
 </html>
